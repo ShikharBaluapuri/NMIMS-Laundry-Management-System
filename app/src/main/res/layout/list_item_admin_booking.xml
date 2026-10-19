@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    android:background="@drawable/bg_card"
+    android:padding="14dp">
+
+    <!-- Top Row: Booking ID + Status Badge -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_admin_booking_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Booking #101"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_admin_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_badge_pending"
+            android:paddingStart="10dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="4dp"
+            android:text="Pending Admin Approval"
+            android:textColor="@color/badge_pending_text"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Student Name & SAP ID -->
+    <TextView
+        android:id="@+id/tv_admin_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Student: student1 (SAP: 70012345678)"
+        android:textColor="@color/primary"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!-- Student Phone & Batch -->
+    <TextView
+        android:id="@+id/tv_admin_student_meta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="📞 9823012345 | B.Tech Computer (3rd Year)"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/divider_border" />
+
+    <!-- Clothes Count & Wash Preferences -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_admin_clothes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6 Clothes"
+            android:textColor="@color/primary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" • "
+            android:textColor="@color/text_muted" />
+
+        <TextView
+            android:id="@+id/tv_admin_options"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Fragile / Gentle Wash"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- Dates Information -->
+    <TextView
+        android:id="@+id/tv_admin_drop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Drop: 2026-10-17 (10:00 AM - 12:00 PM)"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_admin_pickup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Est. Pickup: 2026-10-19"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp" />
+
+    <!-- Allocated Staff / Washer -->
+    <TextView
+        android:id="@+id/tv_admin_allocated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="#EFF6FF"
+        android:padding="6dp"
+        android:text="Assigned Staff: Unassigned"
+        android:textColor="#1E40AF"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <!-- DIRECT ACTION BUTTONS (HIGH CONTRAST & ZERO CONFUSION) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Quick Admin Actions:"
+        android:textColor="@color/text_primary"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_row_admit"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/bg_button_success"
+            android:backgroundTint="@null"
+            android:focusable="false"
+            android:text="✅ Admit"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_row_ready"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/bg_button_accent"
+            android:backgroundTint="@null"
+            android:focusable="false"
+            android:text="👕 Ready"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_row_disapprove"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/bg_button_danger"
+            android:backgroundTint="@null"
+            android:focusable="false"
+            android:text="❌ Reject"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Allocate Staff Button -->
+    <Button
+        android:id="@+id/btn_row_allocate"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_button_secondary"
+        android:backgroundTint="@null"
+        android:focusable="false"
+        android:text="👤 Allocate / Change Washer Staff"
+        android:textAllCaps="false"
+        android:textColor="#1A365D"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
