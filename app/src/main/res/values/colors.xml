@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Theme Colors (NMIMS Shirpur Navy & Accents) -->
+    <color name="primary">#1A365D</color>
+    <color name="primary_dark">#0F203C</color>
+    <color name="primary_light">#2B4C7E</color>
+    <color name="accent">#0284C7</color>
+
+    <!-- General UI Colors -->
+    <color name="background_light">#F8FAFC</color>
+    <color name="card_white">#FFFFFF</color>
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#475569</color>
+    <color name="text_muted">#64748B</color>
+    <color name="divider_border">#CBD5E1</color>
+
+    <!-- High-Contrast Button Colors -->
+    <color name="btn_primary">#1A365D</color>
+    <color name="btn_primary_text">#FFFFFF</color>
+    <color name="btn_secondary_bg">#FFFFFF</color>
+    <color name="btn_secondary_border">#1A365D</color>
+    <color name="btn_secondary_text">#1A365D</color>
+    <color name="btn_success">#059669</color>
+    <color name="btn_danger">#DC2626</color>
+    <color name="btn_info">#0284C7</color>
+
+    <!-- Status Badges -->
+    <color name="badge_pending_bg">#FEF3C7</color>
+    <color name="badge_pending_text">#B45309</color>
+    <color name="badge_admitted_bg">#DBEAFE</color>
+    <color name="badge_admitted_text">#1D4ED8</color>
+    <color name="badge_ready_bg">#D1FAE5</color>
+    <color name="badge_ready_text">#047857</color>
+    <color name="badge_rejected_bg">#FEE2E2</color>
+    <color name="badge_rejected_text">#B91C1C</color>
+    <color name="badge_completed_bg">#F1F5F9</color>
+    <color name="badge_completed_text">#334155</color>
+
+    <!-- Baseline standard colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

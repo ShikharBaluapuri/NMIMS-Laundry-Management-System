@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NMIMS Laundry</string>
+    <string name="title_login">NMIMS Shirpur Laundry</string>
+    <string name="subtitle_login">Hostel Laundry Management Portal</string>
+    <string name="title_user_dashboard">Student Laundry Dashboard</string>
+    <string name="title_admin_dashboard">Admin Laundry Console</string>
+</resources>
